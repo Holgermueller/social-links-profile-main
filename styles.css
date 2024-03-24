@@ -15,25 +15,42 @@ html {
   display: grid;
   align-items: center;
   justify-content: center;
+  font-family: "Inter", sans-serif;
 }
 
 main {
   background-color: var(--DarkGrey);
   text-align: center;
   border-radius: 15px;
+  width: 350px;
 }
 
 img {
   border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 15px auto;
 }
 
 h1,
-h3 {
+p {
   color: var(--White);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 0;
+  font-weight: 700;
 }
 
 h2 {
   color: var(--Green);
+  font-size: 17px;
+}
+
+p {
+  font-size: 14px;
+  margin: 30px;
 }
 
 ul {
@@ -43,11 +60,26 @@ ul {
 
 li {
   background-color: var(--Grey);
+  width: 70%;
+  margin: 15px auto;
+  border-radius: 5px;
+  padding: 15px 20px;
 }
 
-a {
+li a {
+  width: 100%;
   text-decoration: none;
   color: var(--White);
+  font-size: 15px;
+}
+
+li:hover {
+  background-color: var(--Green);
+  cursor: pointer;
+}
+
+li:hover a {
+  color: var(--OffBlack);
 }
 
 footer {
@@ -55,4 +87,11 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  color: var(--White);
+  text-align: center;
+  font-size: 10px;
+}
+
+footer a {
+  color: var(--Green);
 }
